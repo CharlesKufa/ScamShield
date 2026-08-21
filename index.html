@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamShield</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            🛡️ ScamShield
+        </div>
+
+        <div class="nav-links">
+            <a href="#scanner">Message Scanner</a>
+            <a href="#phone">Phone Lookup</a>
+            <a href="#tips">Safety Tips</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header>
+        <h1>Protect Yourself From Scams</h1>
+
+        <p>
+            Analyse suspicious messages and check unknown phone numbers
+            before responding.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#scanner">Scan a Message</a>
+            <a href="#phone">Check a Number</a>
+        </div>
+    </header>
+
+
+    <!-- Scanner Section -->
+    <main>
+
+        <section class="scanner-section" id="scanner">
+
+            <div class="card">
+
+                <h2>Scan Messages</h2>
+
+                <p>
+                    Paste a suspicious SMS, WhatsApp Message, Email,
+                    or other message below:
+                </p>
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Paste suspicious message here..."
+                ></textarea>
+
+                <button onclick="analyseMessage()">
+                    Analyse Message
+                </button>
+
+                <div id="messageResult" class="result hidden"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Phone Number Section -->
+
+        <section class="phone-section" id="phone">
+
+            <div class="card">
+
+                <h2>Phone Number Checker</h2>
+
+                <p>
+                    Enter a phone number to check its risk status.
+                </p>
+
+                <input
+                    type="text"
+                    id="phoneInput"
+                    placeholder="+27 81 123 4567"
+                >
+
+                <button onclick="checkPhoneNumber()">
+                    Check Number
+                </button>
+
+                <div id="phoneResult" class="result hidden"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Safety Tips -->
+
+        <section id="tips">
+
+            <h2>Scam Safety Tips</h2>
+
+            <div class="tips-container">
+
+                <div class="tip">
+                    <h3>🚫 Don't Click Suspicious Links</h3>
+                    <p>
+                        Avoid clicking links from unknown or suspicious senders.
+                    </p>
+                </div>
+
+                <div class="tip">
+                    <h3>🔐 Never Share Passwords</h3>
+                    <p>
+                        Legitimate companies will usually not ask for your password.
+                    </p>
+                </div>
+
+                <div class="tip">
+                    <h3>⚠️ Watch for Urgency</h3>
+                    <p>
+                        Scammers often pressure you to act immediately.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 ScamShield | Stay Safe Online 🛡️
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
